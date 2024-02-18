@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import { Banner } from "../_types/banner";
 import Slider from "react-slick";
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowBackIosNewIcon from "@mui/icons-material/ArrowBackIosNew";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -64,7 +64,7 @@ export const CustomSlider = ({ data }: { data: Banner[] }) => {
           bgcolor: "grey.700",
         }}
       >
-        <ArrowBackIosNewIcon sx={{ color: "#fff" }} />
+        <ArrowBackIosNewIcon sx={{ color: "#fff" }} fontSize="small" />
       </IconButton>
       <IconButton
         onClick={() => slider?.current?.slickNext()}
@@ -76,7 +76,7 @@ export const CustomSlider = ({ data }: { data: Banner[] }) => {
           bgcolor: "grey.700",
         }}
       >
-        <ArrowForwardIosIcon sx={{ color: "#fff" }} />
+        <ArrowForwardIosIcon sx={{ color: "#fff" }} fontSize="small" />
       </IconButton>
     </Container>
   );

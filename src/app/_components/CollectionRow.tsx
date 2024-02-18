@@ -25,19 +25,23 @@ export const CollectionRow = ({ filtered }: { filtered: Collection }) => {
   return (
     <>
       <Grid container spacing={2}>
-        <Grid item xs={12} md={4} lg={3}>
-          <Stack justifyContent={"space-between"} height={"100%"}>
+        <Grid item xs={12} md={4} lg={3} p={3}>
+          <Stack
+            justifyContent={"space-between"}
+            sx={{ width: "100%", height: "100%" }}
+            direction={{ xs: "row", md: "column" }}
+          >
             <Box>
               <Typography variant="subtitle1">{filtered.title}</Typography>
               <Typography variant="body2">{filtered.subtitle}</Typography>
             </Box>
 
             <Stack direction="row" mt="auto">
-              <IconButton disabled>
-                <ArrowBackIosNewIcon />
+              <IconButton disabled size="small">
+                <ArrowBackIosNewIcon fontSize="small"/>
               </IconButton>
-              <IconButton>
-                <ArrowForwardIosIcon />
+              <IconButton size="small">
+                <ArrowForwardIosIcon  fontSize="small"/>
               </IconButton>
             </Stack>
           </Stack>

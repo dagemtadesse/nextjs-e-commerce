@@ -30,8 +30,8 @@ export const Categories = async () => {
         <Card key={data.mainShortcutId} elevation={0}>
           <CardMedia
             component="img"
-            height="80"
-            sx={{ objectFit: "contain" }}
+            height="62"
+            sx={{ objectFit: "contain", aspectRatio: 1 }}
             image={data.imageUrl}
           />
           <CardContent>
